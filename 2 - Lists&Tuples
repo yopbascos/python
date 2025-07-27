@@ -1,0 +1,28 @@
+# Lists & Tuples
+
+# my_list = ["burger", "pizza", "bbq"]
+# my_tuple = ("burger, "pizza", "bbq")
+
+# Lists are mutable (you can change their value)
+# Tuples are immutable (you cannot change them after creation)
+
+grocery_list = []
+total = 0
+
+while True:
+
+    item = input("Input Item: ")
+    item_price = input("Input Item Price: ")
+
+    grocery_list.append((item, float(item_price)))
+
+    loop = input("Add More?(Y/N): ")
+
+    if loop.lower() == "n":
+        break
+
+for item, item_price in grocery_list:
+    print(f"{item}: ${item_price:.2f}")
+    total += item_price
+
+print(f"The total is: ${total:.2f}")
