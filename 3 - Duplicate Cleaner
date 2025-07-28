@@ -1,0 +1,25 @@
+names = []
+
+while True:
+    name = input("Input A Name: ").strip().lower().capitalize()
+
+    if not name:
+        print("Empty Input Detected. Try Again.")
+        continue
+
+    names.append(name)
+
+    loop = input("Add More (Y/N)?: ").strip().lower()
+
+    if loop == "n":
+        break
+
+original_count = len(names)
+cleaned_names = sorted(set(names))
+new_count = len(cleaned_names)
+total_duplicates = original_count - new_count
+
+print(f"We removed a total of {total_duplicates} duplicate(s)")
+print("Final List")
+for i in cleaned_names:
+    print(i)
