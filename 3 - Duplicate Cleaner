@@ -23,3 +23,4 @@ print(f"We removed a total of {total_duplicates} duplicate(s)")
 print("Final List")
 for i in cleaned_names:
     print(i)
+ 
