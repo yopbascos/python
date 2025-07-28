@@ -25,4 +25,4 @@ for item, item_price in grocery_list:
     print(f"{item}: ${item_price:.2f}")
     total += item_price
 
-print(f"The total is: ${total:.2f}")
+print(f"The total is: ${total:.2f}") 
