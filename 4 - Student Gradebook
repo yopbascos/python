@@ -1,0 +1,15 @@
+class_list = {}
+
+while True:
+
+    name = input("Input Student Name: ")
+    grade = input("Input Student Grade: ")
+    class_list.update({name: grade})
+
+    loop = input("Add More? (Y/N): ").strip().lower()
+
+    if loop == "n":
+        break
+
+for name, grade in class_list.items():
+    print(f"{name}: {grade}")
