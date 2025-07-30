@@ -1,0 +1,10 @@
+hours_sleep = int(input("How Many Hours Do You Sleep Each Night?: "))
+
+if hours_sleep >= 8:
+    print("You're Well Rested!")
+
+elif hours_sleep >= 5 and hours_sleep <= 7:
+    print("Try To Get More Rest")
+
+elif hours_sleep < 5:
+    print("Sleep Deprivation Alert!")
