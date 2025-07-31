@@ -1,0 +1,9 @@
+import random
+
+while True:
+    roll = random.randint(1,6)
+    print(f"You rolled {roll}")
+    loop = input("Reroll? (Y/N): ").strip().lower()
+
+    if loop == "n":
+        break
