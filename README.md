@@ -4,7 +4,7 @@ A personal project-based roadmap to mastering core Python concepts — one mini-
 
 ---
 
-## 1. Hello World  
+## 1. Hello World 
 👋 **Project: First Python Program**  
 Write a simple script that prints `"Hello, World!"` to the screen.
 
